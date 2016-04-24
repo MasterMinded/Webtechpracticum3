@@ -10,7 +10,7 @@
 
 			<!-- Menu -->
 			<div id="login-form">
-				<?php echo form_open('/Login'); ?>
+				<?php echo form_open('/login'); ?>
 					<!-- Login --> 
 					<div id="login">
 						<table>
@@ -20,10 +20,10 @@
 								<td> <?php echo form_input(array('name' => 'email', 'id' => 'email', 'value' => '', 'placeholder' => 'E-mail', 'required' => '')); ?> </td>
 								<td> </td>
 								<td> <?php echo form_password(array('name' => 'password', 'id' => 'password', 'value' => '', 'placeholder' => 'Wachtwoord', 'required' => '')); ?></td>
+								<td><?php echo form_submit('submit', 'Submit'); ?></td>
 							</tr>
-						</table> 
+						</table>
+						<?php echo form_close(); ?>
 					</div>
-				<?php echo form_submit('submit', 'Submit'); ?>
-				<?php echo form_close(); ?>
-				<?php echo base_url(); ?>
+				<?php //echo base_url(); ?>
 			</div>
