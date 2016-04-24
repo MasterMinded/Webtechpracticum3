@@ -7,7 +7,10 @@
 </head>
 
 <body>
-<p> CodeIgniter View Example </p>
+<p> Test database </p>
+    <?php
+    print_r($results);
+    ?>
 </body>
 
 </html>

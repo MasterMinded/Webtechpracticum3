@@ -10,7 +10,7 @@
 
 			<!-- Menu -->
 			<div id="login-form">
-				<?php echo form_open(base_url() . 'logincontroller/login'); ?>
+				<?php echo form_open('/Login'); ?>
 					<!-- Login --> 
 					<div id="login">
 						<table>
@@ -25,4 +25,5 @@
 					</div>
 				<?php echo form_submit('submit', 'Submit'); ?>
 				<?php echo form_close(); ?>
+				<?php echo base_url(); ?>
 			</div>

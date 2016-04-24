@@ -12,14 +12,14 @@ class Login extends CI_Controller
 
             if (!$this->usermodel->userLogin($email, $password)) {
 
-                redirect('index.php/pages/relogin');
+                redirect('relog');
             }  else {
                 $this->session->set_userdata(
                     array(
                         'logged_in' => TRUE,
                         'UserID' => $user
                     ));
-                redirect('index.php/pages/home');
+                redirect('home');
             }
 
         }
