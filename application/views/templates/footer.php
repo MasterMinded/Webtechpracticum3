@@ -1,9 +1,5 @@
-</div>
-
 <footer>
-Robin van der Linde en Willem de Groot	
+Robin van der Linde &amp; Willem de Groot, &copy; 2016
 </footer>
-
-</div>
 </body>
 </html>
