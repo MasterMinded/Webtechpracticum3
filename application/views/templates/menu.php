@@ -12,8 +12,8 @@
 			</li>
 			<li class="menuitem" id="profiel-info-menu"><a href="#">Profielen</a>
 				<ul>
-					<li> <?php echo anchor(base_url().'pages/users', 'Andere DataDaters', ''); ?> </li>
-					<li> <?php echo anchor(base_url().'pages/search', 'Zoek', ''); ?> </li>
+					<li> <?php echo anchor(base_url().'', 'Andere profielen', ''); ?> </li>
+					<li> <?php echo anchor(base_url().'', 'Zoek', ''); ?> </li>
 				</ul>
 			</li>
 			<?php //if ($this->session->userdata('ingelogt')) { ?>
@@ -25,12 +25,11 @@
 			<!--</ul>-->
 			<!--</li>-->
 			<?php //} else { ?>
-			<li class="menuitem" id="signup-menu"><a href="#"> Nog geen account?</a>
+			<li class="menuitem" id="signup-menu"><a href="#"> Nog niet geregistreerd?</a>
 				<ul>
-					<li> <?php echo anchor(base_url().'', 'Aanmelden!', ''); ?> </li>
+					<li> <?php echo anchor(base_url().'index.php/Home/signup', 'Aanmelden!', ''); ?> </li>
 				</ul>
 			</li>
 			<?php //} ?>
 		</ul>
-		</nav>
 	</div>
