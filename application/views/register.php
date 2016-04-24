@@ -1,6 +1,6 @@
 <div id="registerform-container">
     <div id="regform">
-        <?php echo form_open(base_url() . 'home/register'); ?>
+        <?php echo form_open(base_url() . 'index.php/Login/register'); ?>
             <h1> Registratie </h1>
             <h3> Accountgegevens</h3>
             <table>

@@ -25,4 +25,22 @@ class Login extends CI_Controller
         }
 
     }
+
+    public function registerUser()
+
+    {
+        $this->load->model('usermodel');
+
+        $input = $this->input->post();
+
+        $this->usermodel->regUser($input);
+
+        redirect('/home');
+
+
+    }
+
+
+    
+    
 }

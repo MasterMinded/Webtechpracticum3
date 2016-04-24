@@ -14,7 +14,7 @@ Class Usermodel extends CI_Model {
         return false;
         }
 
-        if (crypt($password, $user['password']) != $user['password'])    {
+        if ($crypt_password != $user['password'])    {
         return false;
         }
 
@@ -30,5 +30,31 @@ Class Usermodel extends CI_Model {
         $this->session->set_userdata($session_data);
         return true;
         }
+
+
+    public function regUser($input)
+    {
+
+        $data = array(
+            'Username' => element('username', $input),
+            'Firstname' => element('firstname', $input),
+            'Lastname' => element('lastname', $input),
+            'Password' => md5(element('password', $input)),
+            'Email' => element('email', $input),
+            'Gender' => element('gender', $input),
+            'Birthday' => element('date', $input),
+            'Description' => element('description', $input),
+        );
+
+        $this->db->insert('Users', $data);
+    }
+
+    public function delUser($userid)
+
+    {
+        $this->db->where('UserID', $userid);
+        $this->db->delete('Users');
+    }
+
     }
 ?>
