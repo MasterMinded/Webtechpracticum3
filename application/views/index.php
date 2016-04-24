@@ -1,6 +1,7 @@
-<div id="content">
-
-	<div id="info">
+<div id="backgroundimage">
+	<img src="<?php base_url(); ?>assets/images/happypeople3.jpg" alt="Happy people" height ='1600' width="1200">
+	</div>
+	<div id="websitecontent">
 
 		<div id="datawat">
 			<h2> Wat is DataDate? </h2>

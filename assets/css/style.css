@@ -1,5 +1,14 @@
-h1 {
-    color:blue;
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Neuton', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    line-height: 1.4;
+}
 
 
+div#backgroundimage {
+    width: 100%;
+    text-align: center;
 }
