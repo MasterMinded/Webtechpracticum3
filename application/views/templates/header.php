@@ -4,7 +4,7 @@
 		<title><?php echo $title ?></title>
 		
     	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css">
-		<!--<script> javascript </script> -->
+		<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-2.2.3.min.js"></script>
 	</head>
 	<body>
 	
