@@ -7,10 +7,6 @@
 		<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-2.2.3.min.js"></script>
 	</head>
 	<body>
-	
-		<nav id="navmenu">
-
-		</nav>
 
 			<!-- Menu -->
 			<div id="login-form">
