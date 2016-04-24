@@ -3,12 +3,14 @@
 	<head>
 		<title><?php echo $title ?></title>
 		
-    	<link rel="stylesheet" href="<?php echo base_url(); ?>application/assets/css/style.css" type="text/css">
+    	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css">
 		<!--<script> javascript </script> -->
 	</head>
 	<body>
 	
-		<div id="header">
+		<nav id="navmenu">
+
+		</nav>
 
 			<!-- Menu -->
 			<div id="login-form">
@@ -28,4 +30,3 @@
 				<?php echo form_submit('submit', 'Submit'); ?>
 				<?php echo form_close(); ?>
 			</div>
-			<?php 

@@ -1,9 +1,9 @@
-<div id="footer"> 	
-	<div id="footer-top">
-   	    	</div>
+</div>
 
-   	    	<div id="footer-bottom">
-   	    	</div>
-   	    </div>         
-    </body>
+<footer>
+Robin van der Linde en Willem de Groot	
+</footer>
+
+</div>
+</body>
 </html>
