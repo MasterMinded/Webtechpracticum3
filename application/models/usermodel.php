@@ -10,26 +10,16 @@ Class Usermodel extends CI_Model {
         $user = $query->row_array();
 
 
-        if (empty($user))    {
-        return false;
+        if (empty($user)) {
+            return false;
         }
 
-        if ($crypt_password != $user['password'])    {
-        return false;
+        if ($crypt_password != $user['password']) {
+            return false;
+        } else {
+            return true;
         }
-
-        $this->db->where('userid', $user['userid']);
-        $this->db->update('users', array('password' => $crypt_password));
-        $id = ($user['admin'] == 'TRUE' ? 'adminid' : 'userid'); //is het een user of admin account
-
-        $session_data = array(
-        $id => $user['userid'],
-        'email' => $user['email']
-        );
-
-        $this->session->set_userdata($session_data);
-        return true;
-        }
+    }
 
 
     public function regUser($input)

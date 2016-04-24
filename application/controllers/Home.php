@@ -15,9 +15,22 @@ class Home extends CI_Controller
 
     public function signup()
     {
-    $this->load->view('register');
-
+        $data['title'] = 'Datadate';
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/menu', $data);
+        $this->load->view('register');
+        $this->load->view('templates/footer', $data);
     }
+    
+    public function relogin()
+    {
+        $data ['title'] = 'Datadate';
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/menu', $data);
+        $this->load->view('relog', $data);
+        $this->load->view('templates/footer', $data);
+    }
+        
 }
 
 
