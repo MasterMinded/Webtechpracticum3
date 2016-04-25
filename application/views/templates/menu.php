@@ -21,7 +21,7 @@
 				<ul>
 					<li> <?php echo anchor(base_url().'pagina/'. $this->session->userdata('UserID'), 'Mijn profiel', ''); ?></li>
 					<li> <?php echo anchor(base_url().''.$this->session->userdata('UserID'), 'Wijzig profiel', ''); ?></li>
-					<li> <?php echo anchor(base_url().'', 'Log uit', ''); ?> </li>
+					<li> <?php echo anchor(base_url().'index.php/Home/logout', 'Log uit', ''); ?> </li>
 				</ul>
 			</li>
 			<?php } else { ?>
