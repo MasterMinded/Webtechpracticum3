@@ -30,6 +30,14 @@ class Home extends CI_Controller
         $this->load->view('relog', $data);
         $this->load->view('templates/footer', $data);
     }
+    
+    public function logout()
+    {
+        $this->session->sess_destroy();
+
+        redirect('/home');
+        
+    }
         
 }
 
