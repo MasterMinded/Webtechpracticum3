@@ -7,8 +7,9 @@
 		<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-2.2.3.min.js"></script>
 	</head>
 	<body>
+		<?php if ( ! $this->session->userdata('logged_in')) {?>
 			<div id="login-form">
-				<?php echo form_open('/login'); ?>
+				<?php echo form_open('/Login'); ?>
 					<div id="login">
 						<table>
 							<tr>
@@ -24,3 +25,4 @@
 					</div>
 				<?php //echo base_url(); ?>
 			</div>
+<?php }?>
