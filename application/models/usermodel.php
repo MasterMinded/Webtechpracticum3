@@ -32,7 +32,7 @@ Class Usermodel extends CI_Model {
             'Password' => md5(element('password', $input)),
             'Email' => element('email', $input),
             'Gender' => element('gender', $input),
-            'Birthday' => element('date', $input),
+            'Birthdate' => element('date', $input),
             'Description' => element('description', $input),
         );
 
