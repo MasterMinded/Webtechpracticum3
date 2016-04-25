@@ -38,6 +38,16 @@ class Home extends CI_Controller
         redirect('/home');
         
     }
+    
+    public function editProfile()
+        
+    {
+        $data ['title'] = 'Datadate';
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/menu', $data);
+        $this->load->view('editprofile', $data);
+        $this->load->view('templates/footer', $data);
+    }
         
 }
 
