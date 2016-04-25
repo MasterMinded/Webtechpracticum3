@@ -17,7 +17,8 @@ class Login extends CI_Controller
                 $this->session->set_userdata(
                     array(
                         'logged_in' => TRUE,
-                        'UserID' => $user
+                        'UserID' => $user,
+                        'UserName' => $email
                     ));
                 redirect('/home');
                 return;
