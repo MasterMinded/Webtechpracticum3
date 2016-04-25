@@ -26,14 +26,14 @@ Class Usermodel extends CI_Model {
     {
 
         $data = array(
-            'Username' => element('username', $input),
-            'Firstname' => element('firstname', $input),
-            'Lastname' => element('lastname', $input),
-            'Password' => md5(element('password', $input)),
-            'Email' => element('email', $input),
-            'Gender' => element('gender', $input),
-            'Birthdate' => element('date', $input),
-            'Description' => element('description', $input),
+            'username' => element('username', $input),
+            'firstname' => element('firstname', $input),
+            'lastname' => element('lastname', $input),
+            'password' => md5(element('password', $input)),
+            'email' => element('email', $input),
+            'gender' => element('gender', $input),
+            'date' => element('date', $input),
+            'description' => element('description', $input),
         );
 
         $this->db->insert('Users', $data);
